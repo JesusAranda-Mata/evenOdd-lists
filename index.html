@@ -10,14 +10,13 @@
 <body>
     <h1>Even Odd Lists</h1>
     <hr/> 
-
     <form id="even-odd-form" autocomplete="off" target="_blank">
       <div> 
         <label for="word">word</label> 
         <input type="text" name="word" id="word"  placeholder="what's your word?" onkeyup="updateWord(this)"> 
       </div>
       <div>
-        <input type="button" value="Even or Odd?" onclick="updateWord(this)">
+        <input type="button" value="Even or Odd?" onclick="handleSubmit(this)">
       </div>
     </form>
     <section>
@@ -28,6 +27,6 @@
         <h2>Odd</h2>
         <ul id="odd"></ul>
       </section>
+  <script src="script.js"></script>
 </body>
-<script src="./script.js"></script>
 </html>

@@ -3,7 +3,7 @@ let oddList = document.getElementById("odd")
 let evenList = document.getElementById("even")
 
 function updateWord(element) {
-    usersWord - element.value
+    usersWord = element.value
 
     console.log(usersWord)
 }
@@ -14,10 +14,11 @@ function handleSubmit() {
 
     oddList.appendChild(newListItem)
 
+
      if (usersWord.length % 2 === 0) {
-        /* put word in even list */
+        /* put word in even list */ return newListItem
     } else {
-        /*put word in odd list*/
+        /*put word in odd list*/ return newListItem
         oddList.appendChild(newListItem)
     }
 
