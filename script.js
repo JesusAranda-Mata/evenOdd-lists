@@ -12,17 +12,17 @@ function handleSubmit() {
     let newListItem = document.createElement('LI')
     newListItem.innerText = usersWord
 
-    oddList.appendChild(newListItem)
-
+    
+    
 
      if (usersWord.length % 2 === 0) {
-        /* put word in even list */ return newListItem
+        /* put word in even list */ evenList.appendChild(newListItem) 
     } else {
-        /*put word in odd list*/ return newListItem
-        oddList.appendChild(newListItem)
+        /*put word in odd list*/ oddList.appendChild(newListItem)
+        
     }
-
+    // This function will reset the page if the box is empty
     usersWord = ""
-    document.getElementById("even-odd-form").requestFullscreen()
+    document.getElementById("even-odd-form").reset()
 }
 
